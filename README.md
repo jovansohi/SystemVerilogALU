@@ -1,3 +1,5 @@
+I broke the code.
+
 Project Goal:
 Demonstrate my Python scripting, C++ embedded programming, and SystemVerilog proficiency and further build upon this into a more complex project (thinking digital filter)
 Have 4 buttons serve as an input into an ALU, the buttons are programmed as multiuse, and since its binary order doesnt matter. Pressing a button once changes it from 0 to 1, and this changes with each press.
