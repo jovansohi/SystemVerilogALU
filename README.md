@@ -1,8 +1,10 @@
 I broke the code.
 
 Project Goal:
+// This is a remake of a project I have already created. I am looking to address a critical issue with the previous iteration, by changing the ESP code to have more accurate debouncing.
 Demonstrate my Python scripting, C++ embedded programming, and SystemVerilog proficiency and further build upon this into a more complex project (thinking digital filter)
 Have 4 buttons serve as an input into an ALU, the buttons are programmed as multiuse, and since its binary order doesnt matter. Pressing a button once changes it from 0 to 1, and this changes with each press.
+// The issue with the previous iteration is that holding any of the buttons at the bottom causes the whole ESP to crash
 This is essentially a state machine
 Once the desired input is entered through the buttons, the fifth button is used to read the number
 (Storing it as a string, outputting to serial monitor)
@@ -16,4 +18,4 @@ If cleared, the ALU returns to its first state,
 If it saves output as input 1, the serial monitor receives a "1," which tells it to only look for 2 more serial lines before printing to the file and to hold the ModelSim Output in the file as input 1
 Then the state machine goes back to "phase 1," receiving input2 and the operation, before repeating whats above
 If it saves output as input 2, the  serial monitor receives a "0," which tells the Python script that it will ignore the second line of the serial monitor (which will be 0000)
-The state machine then moves to state 4, where it takes input 1, skips input2, and asks for the operation before repeating based on the user input after the output
+The state machine then moves to state 4, where it takes input 1, skips input 2, and asks for the operation before repeating based on the user input after the output
